@@ -7,6 +7,7 @@ import { BabySiterServiceService } from './Service/baby-siter-service.service';
 import { BabySiterComponent } from './baby-siter/baby-siter.component';
 import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -15,16 +16,14 @@ import { MenuComponent } from './menu/menu.component';
     AppComponent,
     BabySiterComponent,
     MenuComponent,
-
+   
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    
-    
-    
+    HttpClientModule,
 
   ],
   providers: [BabySiterServiceService],
